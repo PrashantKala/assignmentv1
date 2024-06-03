@@ -16,7 +16,7 @@ const home = () => {
         <section className='gallery'><Gallery/></section>
         <section className='testimonials'><Testimonials/></section>
         <section className='pricingPlans'><Pricing_Plan/></section>
-        <section className='contact'><Contact/></section>
+        {/* <section className='contact'><Contact/></section> */}
     </>
   )
 }
