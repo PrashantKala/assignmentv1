@@ -3,7 +3,7 @@ import React from 'react'
 const Features = () => {
   return (
     <>
-      <div className="common">
+      <div className="common" style={{backgroundColor: 'pink'}}>
         <div className="leftSide"><img src="" alt="Image" /></div>
         <div className="rightSide">
           <div className="featuresHeading">
