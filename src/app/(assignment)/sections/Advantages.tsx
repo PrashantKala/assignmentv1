@@ -1,11 +1,14 @@
 import React from 'react'
+import Image from 'next/image';
+import Img1 from "../images/advantageSectionImg1.png"
+import Img2 from "../images/advantageSectionImg2.png"
 
 const Advantages = () => {
     return (
         <>
             <div className="common">
                 <div className="rightSide">
-                    <img src="" alt="Image" />
+                    <Image src={Img1} alt='Image 1' />
                 </div>
                 <div className="leftSide">
                     <div className="heading">
@@ -26,7 +29,7 @@ const Advantages = () => {
                     </div>
                 </div>
                 <div className="rightSide">
-                    <img src="" alt="Image" />
+                    <Image src={Img2} alt='Image 2'/>
                 </div>
             </div>
         </>

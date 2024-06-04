@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image';
+import Img from "../images/testimonialSectionImg.png"
 
 const Testimonials = () => {
   return (
@@ -9,7 +11,9 @@ const Testimonials = () => {
           <h1>What Our Users <br /> Say About Us?</h1>
         </div>
         <div className='common'>
-          <div className="leftSide"><img src="" alt="Image" /></div>
+          <div className="leftSide">
+            <Image src={Img} alt='Image' />
+          </div>
           <div className="rightSide">
             <h4>The Best Financial Accounting App Ever!</h4>
             <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.”</p>

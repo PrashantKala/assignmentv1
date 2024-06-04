@@ -1,12 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-const FaqCard = (props) => {
+type FaqCardProps = {
+    title: string;
+    body: string;
+};
+
+const FaqCard: React.FC<FaqCardProps> = ({ title, body }) => {
   return (
-    <>
-        <div className="cardTitle">{props.cardTitle}</div>
-        <div className="cardBody">{props.cardBody}</div>
-    </>
-  )
+    <div className="faqCard">
+        <h3>{title}</h3>
+        <p>{body}</p>
+    </div>
+  );
 }
 
-export default FaqCard
+export default FaqCard;

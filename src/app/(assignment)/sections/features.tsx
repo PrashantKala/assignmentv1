@@ -1,10 +1,12 @@
 import React from 'react'
+import Image from 'next/image';
+import Img from '../images/featureSectionImg.png'
 
 const Features = () => {
   return (
     <>
-      <div className="common" style={{backgroundColor: 'pink'}}>
-        <div className="leftSide"><img src="" alt="Image" /></div>
+      <div className="common">
+        <div className="leftSide"><Image src={Img} alt='Image' /></div>
         <div className="rightSide">
           <div className="featuresHeading">
             <h3>Features</h3>

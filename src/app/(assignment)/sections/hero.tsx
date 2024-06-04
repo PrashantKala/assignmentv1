@@ -1,4 +1,8 @@
 import React from 'react'
+import Image from 'next/image';
+
+import Img1 from "../images/heroSectionImg1.png"
+import Img2 from "../images/heroSectionImg2.png"
 
 const Hero = () => {
   return (
@@ -11,9 +15,10 @@ const Hero = () => {
             <button>Get Started</button>
           </div>
         </div>
-        <div className="leftBottom"><img src="" alt="Image" /></div>
+        <div className="leftBottom"><Image src={Img1} alt="Img 1" /></div>
       </div>
-      <div className="rightSide"><img src="" alt="Image" /></div>
+      <div className="rightSide"><Image src={Img2} alt="Img 2" /></div>
+
     </div>
   )
 }
