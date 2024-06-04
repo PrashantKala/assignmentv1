@@ -1,20 +1,26 @@
 "use client"
 import React from 'react'
 
-import Hero from './sections/hero'
-import Features from './sections/features'
-import Gallery from './sections/gallery'
-import Testimonials from './sections/testimonials'
-import Pricing_Plan from './sections/pricingPlans'
-import Contact from './sections/contact'
+import Navbar from './sections/Navbar'
+import Features from './sections/Features'
+import Gallery from './sections/Gallery'
+import Testimonials from './sections/Testimonials'
+import Pricing_Plan from './sections/PricePlans'
+import Contact from './sections/Contact'
+import Hero from './sections/Hero'
+import Advantages from './sections/Advantages'
+import Faqs from './sections/Faqs'
 
 const home = () => {
   return (
     <>
+        <section className='navbar'><Navbar/></section>
         <section className='hero'><Hero/></section>
         <section className='features'><Features/></section>
-        <section className='gallery'><Gallery/></section>
+        <section className='Advantages'><Advantages/></section>
         <section className='testimonials'><Testimonials/></section>
+        <section className='faqs'><Faqs/></section>
+        <section className="getStartedImg"><img src="" alt="Image" /></section>
         <section className='pricingPlans'><Pricing_Plan/></section>
         <section className='contact'><Contact/></section>
     </>

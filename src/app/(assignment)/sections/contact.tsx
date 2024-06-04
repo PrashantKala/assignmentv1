@@ -1,6 +1,6 @@
 import React from 'react'
 
-const hero = () => {
+const Contact = () => {
   return (
     <>
         <div>contact Section</div>
@@ -8,4 +8,4 @@ const hero = () => {
   )
 }
 
-export default hero
+export default Contact

@@ -1,33 +1,69 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* *{
+  Box size:border-box
+  Font family: roboto/
+  Font size: 24px
+  Box sizing:"border-box"
+} */
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.common{
+  display: flex;
+  background-color: bisque;
+  flex-direction: row ;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+/* NavBar */
+
+.navbar {
+  display: flex; 
+  background-color: aqua;
+  flex-direction: row;
+  gap: 50px;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.logo{
+  background-color: bisque;
+  width: 10vw;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.navBtns{
+  background-color: black;
+  width: 70vw;
+  display: flex; 
+  background-color: aqua;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* Hero Section */
+
+.leftSide {
+  display: felx;
+  background-color: rgb(103, 182, 69);
+  width: 50vw;
+}
+
+.rightSide{
+  display: felx;
+  background-color: rgb(235, 76, 76);
+  width: 50vw;
+}
+
+
+/* Testimoniaks */
+
+.userImg{
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* FAQ  */
+
+.faq{
+  display: grid;
+  grid-template-columns: repeat(2,50%);
 }

@@ -1,11 +1,33 @@
 import React from 'react'
 
-const hero = () => {
+const Features = () => {
   return (
     <>
-        <div>features Section</div>
+      <div className="common">
+        <div className="leftSide"><img src="" alt="Image" /></div>
+        <div className="rightSide">
+          <div className="featuresHeading">
+            <h3>Features</h3>
+            <h1>Uifry premium</h1>
+          </div>
+          <div className="featuresList">
+            <div className="feature1">
+            <h5>Budgeting intervals</h5>
+            <p>Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
+            </div>
+            <div className="feature2">
+              <h5>Budgeting intervals</h5>
+              <p>Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
+            </div>
+            <div className="feature3">
+              <h5>Budgeting intervals</h5>
+              <p>Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
 
-export default hero
+export default Features
