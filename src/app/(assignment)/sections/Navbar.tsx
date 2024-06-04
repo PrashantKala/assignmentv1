@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image';
+import Img from '../images/logo.png'
 
 const Navbar = () => {
   return (
@@ -6,14 +8,14 @@ const Navbar = () => {
       <center>
         <div className="navbar">
           <div className="logo">
-            <img src="" alt="image" />
+            <Image src={Img} alt='Image' />
           </div>
-          <div className="navBtns">
-            <div className="navBtn1">Home</div>
-            <div className="navBtn2">About Us</div>
-            <div className="navBtn3">Pricing</div>
-            <div className="navBtn4">Features</div>
-          </div>
+          <ul className="navBtns">
+            <li className="navBtn">Home</li>
+            <li className="navBtn">About Us</li>
+            <li className="navBtn">Pricing</li>
+            <li className="navBtn">Features</li>
+        </ul>
           <button className="downloadBtn">Download</button>
         </div>
       </center>

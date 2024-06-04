@@ -8,53 +8,150 @@
 .common{
   display: flex;
   flex-direction: row ;
-  /* background-color: bisque; */
   border: 5px solid black;
-}
-
-
-/* NavBar */
-
-.navbar {
-  display: flex; 
-  background-color: aqua;
-  flex-direction: row;
-  gap: 50px;
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.logo{
-  background-color: bisque;
-  width: 10vw;
-}
-
-.navBtns{
-  background-color: black;
-  width: 70vw;
-  display: flex; 
-  background-color: aqua;
-  flex-direction: row;
-  gap: 10px;
-}
-
-/* Hero Section */
-
-.leftSide {
-  display: felx;
-  /* background-color: rgb(103, 182, 69); */
-  width: 50vw;
-  border: 3px solid blueviolet;
-  /* height: 80vh; */
 }
 
 .rightSide{
   display: felx;
   border: 3px solid gold;
-  /* background-color: rgb(235, 76, 76); */
   width: 50vw;
-  /* height: 80vh; */
+  flex: 1;
+}
+
+
+.leftSide {
+  display: felx;
+  width: 50vw;
+  border: 3px solid blueviolet;
+  flex: 1;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+/* NavBar */
+
+.navbar {
+  border: 2px solid black;
+  display: flex; 
+  flex-direction: row;
+  /* gap: 50px; */
+  width: 70vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  border: 2px solid black;
+}
+
+.navBtns {
+  border: 2px solid black;
+  width: 50vw;
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navBtn {
+  padding: 10px 20px;
+}
+
+
+.downloadBtn {
+  width: 10vw;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Hero Section */
+
+
+.leftUpper h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.leftBottom {
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.heroLeftBottom img{
+  border: 2px solid black;
+  width: 100%;
+  /* height: 20vw; */
+  margin: auto;
+  padding: auto;
+}
+
+
+
+.heroRight img{
+  border: 2px solid black;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+}
+
+
+/* Feature Section */
+
+
+.feature{
+  height: 80vh;
+}
+/* .features .leftSide{
+  height: 40vh;
+} */
+
+.featureLeft img{
+  margin: auto;
+  padding: auto;
+  height: 100%;
+  width:  60%;
+}
+
+.featuresHead h3 {
+  color: red;
+  margin: 0%;
+  padding: 0%;
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+  padding: 0%;
+  /* gap: 1rem; */
+}
+
+.feature1,
+.feature2,
+.feature3 {
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+  padding: 0%;
+  /* gap: 0.5rem; */
 }
 
 
